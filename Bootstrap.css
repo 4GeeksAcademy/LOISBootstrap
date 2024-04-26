@@ -1,0 +1,55 @@
+*{
+    border: 1px solid red;
+}
+body {
+    height: 100vh; /* Aseguro que el cuerpo tenga altura total */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+.iconoinsta {
+    font-family: Helvetica;
+    color: black;
+}
+.ic{
+    color:black
+}
+.ic2{
+    color:black;
+    font-size: 1.2rem;
+    background-color: gray;
+}
+.tablaiconos{
+    display: flex;
+    width: 5%;
+}
+.nav-link{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+}
+
+.container{
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    aspect-ratio: 1/1;/* Relación de aspecto cuadrada */
+    display: flex;  /* Flex para centrar */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+   
+}    
+
+.card img {
+    width: 100%;  /* Ajusta para que la imagen ocupe todo el ancho */
+    object-fit: cover;  /* Ajusta la imagen sin distorsionarla */
+    border-radius: 5px;  /* Para un acabado suave */
+    height: 100%;
+    
+}
