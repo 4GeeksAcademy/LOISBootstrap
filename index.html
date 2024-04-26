@@ -28,18 +28,21 @@
                       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav align-items-center">
                           <li class="nav-item active">
-                            <a class="nav-link" href="#">
+                            <!-- modifico para activar y que se abra el modal -->
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalpost"> 
                               <span class="btn btn-success">
-                                Create a new post
+                                Creando un nuevo post
                               </span>
                             </a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle sonbreadogris" href="#" id="menudesplegable" data-bs-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              <i class="ri-settings-2-line ic2"></i>
+                              <i class="ri-settings-2-line ic2">
+                              </i>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- Menú desplegable asociado al icono = dropdown-menu -->
+                            <div class="dropdown-menu dropdown-menu-start" aria-labelledby="menudesplegable"> 
                               <a class="dropdown-item" href="#">Action</a>
                               <a class="dropdown-item" href="#">Another action</a>
                               <a class="dropdown-item" href="#">Something else here</a>
@@ -51,12 +54,11 @@
                   </nav>
             </div>
             <div class="tablaiconos">
-              <a class="nav-link" aria-current="page" href="#"><i class="ri-grid-fill"></i><i class="ri-square-fill"></i></a>
+              <a class="nav-link" href="#fotos" aria-current="page" href="#"><i class="ri-grid-fill"></i><i class="ri-square-fill"></i></a>
             </div>
         </div>
 <!-- grid  -->
-        <div class="container">
-          <div class="fotos">
+        <div class="container" id="fotos"> <!-- fotos hace referencia al fotos del icono grid-->
   <!-- Primera Fila -->          
             <div class="row g-1 gx-1"> <!-- Row con espacio entre columnas (g-2)-->
               <div class="col-4"> <!-- 1ª columna con 4 columnas dentro-->
@@ -111,9 +113,35 @@
                 </div> 
               </div>
             </div>
-          </div>  <!-- Fotos  -->
         </div> <!-- Fin de container  -->
       </div>
-    </div>
-</body>
+<!-- Esta ubicación es ideal para asegurarse de que todos los elementos de la página estén cargados antes de intentar activar el modal.  -->   
+ <!-- ID Unico para el Modal  -->      
+      <div class="modal" id="modalpost" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Creando un nuevo post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Agrega el título de tu publicación aquí.</p>
+              <input type="text" class="cajon-escribir" placeholder="Escribe aquí..."> <!-- crear un cajon  -->
+            </div>
+            <div class="iconosmodal">
+              <div class="camara">
+                <i class="ri-camera-line"></i>
+              </div>
+              <div class="ubicación">
+                <i class="ri-map-pin-fill"></i>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
 </html>

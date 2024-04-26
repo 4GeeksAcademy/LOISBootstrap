@@ -1,55 +1,99 @@
 *{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body {
-    height: 100vh; /* Aseguro que el cuerpo tenga altura total */
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    margin: 0; /* Elimina márgenes por defecto */
+   height: 100%; /* Aseguro que el cuerpo tenga altura total */
+   display: flex;
+   align-items: center; /* Centra verticalmente */
+   justify-content: center; /* Centra horizontalmente */
+   margin: 0; /* Elimina márgenes por defecto */
 }
 .iconoinsta {
-    font-family: Helvetica;
-    color: black;
+   font-family: Helvetica;
+   color: black;
 }
 .ic{
-    color:black
+   color:black
+}
+
+
+.sonbreadogris{
+   background-color: gray;/* Sombreado gris */
+   border-radius: 5px; /* Bordes redondeados */
 }
 .ic2{
-    color:black;
-    font-size: 1.2rem;
-    background-color: gray;
+   color: white; /* Color blanco para el ícono */
+   font-size: 1.2rem;
+
 }
 .tablaiconos{
-    display: flex;
-    width: 5%;
+   display: flex;
+   width: 5%;
 }
-.nav-link{
-    width: 100%;
-    padding: 0;
-    text-align: center;
 
+.ri-grid-fill{ /* icono grid */
+   color: gray;
+}
+
+.ri-square-fill{ /* icono cuadrado */
+   color: gray;
+}
+
+.nav-link{
+   width: 100%;
+   padding: 0;
+   text-align: center;
+
+}
+.cajon-escribir {
+   border: 1px solid gray; /* Borde gris */
+   padding: 10px; /* Espaciado interno */
+   border-radius: 5px; /* Bordes redondeados */
+   background-color: white; /* Fondo blanco */
+   width: 100%; /* Ancho completo */
+}
+
+.iconosmodal{
+   padding: 10px 20px;
+   color: black;
+   display: flex;
+}
+.ubicación{
+   margin-left: 10px;
 }
 
 .container{
-    background-color: blueviolet;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+   /*background-color: blueviolet;*/
+   height: 100%;
+   width: 100%;
+   padding: 10px;
+   position: relative; /* Aseguramos un posicionamiento relativo para el contenedor */
+}
+
+.dropdown-menu {
+   position: absolute; /* Ajusta el posicionamiento del menú desplegable */
+   width: 100px; /* Ajusta la anchura del menú desplegable según sea necesario */
+   z-index: 1000; /* Asegura que el menú desplegable esté por encima de otros elementos */
+   left: -50px;
+}
+
+.dropdown-item{
+   font-size: 0.8rem;
+
 }
 
 .card {
-    aspect-ratio: 1/1;/* Relación de aspecto cuadrada */
-    display: flex;  /* Flex para centrar */
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;  /* Centra verticalmente */
-   
+   aspect-ratio: 1/1;/* Relación de aspecto cuadrada */
+   display: flex;  /* Flex para centrar */
+   justify-content: center;  /* Centra horizontalmente */
+   align-items: center;  /* Centra verticalmente */
+  
 }    
 
 .card img {
-    width: 100%;  /* Ajusta para que la imagen ocupe todo el ancho */
-    object-fit: cover;  /* Ajusta la imagen sin distorsionarla */
-    border-radius: 5px;  /* Para un acabado suave */
-    height: 100%;
-    
+   width: 100%;  /* Ajusta para que la imagen ocupe todo el ancho */
+   object-fit: cover;  /* Ajusta la imagen sin distorsionarla */
+   border-radius: 5px;  /* Para un acabado suave */
+   height: 100%;
+   
 }
