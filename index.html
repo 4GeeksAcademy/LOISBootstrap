@@ -52,10 +52,11 @@
                       </div>
                     </div>
                   </nav>
-            </div>
-            <div class="tablaiconos">
-              <a class="nav-link" href="#fotos" aria-current="page" href="#"><i class="ri-grid-fill"></i><i class="ri-square-fill"></i></a>
-            </div>
+            </div>    
+        </div>
+        <div class="tablaiconos">
+          <a class="nav-link" href="#fotos" aria-current="page" href="#"><i class="ri-grid-fill ico"></i></a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fotopostModal"><i class="ri-square-fill ico2"></i></a>
         </div>
 <!-- grid  -->
         <div class="container" id="fotos"> <!-- fotos hace referencia al fotos del icono grid-->
@@ -143,5 +144,93 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="fotopostModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Post Instagram</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center"><!-- text-center para centrar las imágenes y el contenido.  -->
+               <!-- Primera imagen en el modal -->
+              <div class="fotos text-center"> <!-- text-center para centrar las imágenes y el contenido.  -->
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">12/09</p> 
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDZO3fxOBstK2JGISFjb68g3COek938bb-ZgZy0mU1Q&s" class="img-fluid mb-3" alt="Valdoviño"> <!--  La clase img-fluid para mantener un tamaño ajustado y uniforme-->
+                <p>Vista de la playa de Valdoviño.</p>
+                
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">11/24</p> 
+                </div>
+                <img src="https://www.concellodevaldovino.com/arquivo/sites/default/files/praiascampelo.jpg" class="img-fluid mb-3" alt=""> <!--  Para agregar espacio entre las imágenes y sus descripciones, se usó mb-3 -->
+                <p>Descripción: Playa de Campelo.</p>
+              
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">10/24</p> 
+                </div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/f3/56/1f/camino-surf-valdovino.jpg?w=600&h=400&s=1" class="img-fluid mb-3" alt="...">
+                <p>Descripción: Camino y playa para surfear en Valdoviño.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">09/24</p> 
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2bPejxNByp9S4h-gNJizEjOPldvXFbIrAbjLhKeE3QA&s" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">08/24</p> 
+                </div>
+                <img src="https://media.quincemil.com/imagenes/2021/01/10185051/Foto-1.-Arenal-de-Valdovi%C3%B1o-turismo.gal_photos_v2_custom-1706x960.jpg" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">07/24</p> 
+                </div>
+                <img src="https://media.quincemil.com/imagenes/2021/01/10185022/Foto-3.-Vista-a%C3%A9rea-de-la-playa-de-Valdovi%C3%B1o-turismo.gal_.jpg" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">06/24</p> 
+                </div>
+                <img src="https://photo980x880.mnstatic.com/01282f7d71cede3b76322ab4bfda7e4c/ermita-da-virxe-do-porto-7767328.jpg" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">05/24</p> 
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXE6AczVn2KHI5xypna_DRq8SP4aES4Ci8K_wd9RvVg&s" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+
+                <div class="cabecerafoto1">
+                  <p class="textosuperior">Valdoviño</p>
+                  <p class="fecha">04/24</p> 
+                </div>
+                <img src="https://cope-cdnmed.cope.es/resources/jpg/8/4/1590092080948.jpg" class="img-fluid mb-3" alt="...">
+                <p>Descripción de la imagen o comentarios sobre el post.</p>
+              </div> <!-- fin contenedor fotos -->
+            </div> <!-- fin modal body -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- fin del modal de las fotos -->
     </body>
 </html>
+
+
+
+
+
+
+
+
